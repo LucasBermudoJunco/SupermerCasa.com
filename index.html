@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupermerCasa&nbsp;&nbsp;|&nbsp;&nbsp;del supermercado a tu casa</title>
+    <link rel="icon" href="a-Imagenes/CarritoCompra.png" type="image/png">
+    <link rel="stylesheet" href="2-CSSs/2.1-CSSsPaginaPrincipal/CSSdeSupermerCasa0Body.css">
+    <link rel="stylesheet" href="2-CSSs/2.1-CSSsPaginaPrincipal/CSSdeSupermerCasa1Header.css">
+    <link rel="stylesheet" href="2-CSSs/2.1-CSSsPaginaPrincipal/CSSdeSupermerCasa2Main.css">
+    <link rel="stylesheet" href="2-CSSs/2.1-CSSsPaginaPrincipal/CSSdeSupermerCasa3Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" id="checkbtn"><i class="fas fa-bars"></i></label>
+        <section class="headerContenido" id="headerFila1">
+            <a href="#" id="logo"><img src="a-Imagenes/LogoSupermerCasa.jpg" alt="SupermerCasa"></a>
+            <a href="#" id="logoReducido"><img src="a-Imagenes/LogoReducido.png" alt="SupermerCasa"></a>
+            <section id="busqueda">
+                <input type="search" placeholder="Busca el producto que quieras aquí">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </section>
+            <nav id="navSuperior">
+                <ul>
+                    <li><a href="#"><img src="a-Imagenes/CarritoCompra.png" alt="Cesta de la compra"></a>
+                        <ul id="cesta">
+                            <li><a href="#">Mi cesta actual</a></li>
+                            <li><a href="#">Comprar ya</a></li>
+                            <li><a href="#">Mis pedidos</a></li>
+                            <li><a href="#">Métodos de pago</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="a-Imagenes/AvatarUsuario.png" alt="Usuario"></a>
+                        <ul id="cuenta">
+                            <li><a href="1-HTML/InicioSesion.html">Iniciar Sesión</a></li>
+                            <li><a href="1-HTML/RegistroUsuario.html">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="a-Imagenes/IconoIdiomasMundo.png" alt="Idiomas"></a>
+                        <ul id="idiomas">
+                            <li><a href="#">Inglés</a></li>
+                            <li><a href="#">Español</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="headerContenido" id="headerFila2">
+            <nav id="navInferior">
+                <ul>
+                    <li><a href="#">Productos</a>
+                        <ul>
+                            <li><a href="#">Alimentos</a>
+                                <ul>
+                                    <li><a href="#">Carne</a></li>
+                                    <li><a href="#">Frutas, Verduras y Legumbres</a></li>
+                                    <li><a href="#">Embutidos y Quesos</a></li>
+                                    <li><a href="#">Salsas y Especias</a></li>
+                                    <li><a href="#">Pastas</a></li>
+                                    <li><a href="#">Precocinados y Congelados</a></li>
+                                    <li><a href="#">Yogures</a></li>
+                                    <li><a href="#">Panadería</a></li>
+                                    <li><a href="#">Cafés y Cacaos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bebidas</a>
+                                <ul>
+                                    <li><a href="#">Aguas</a></li>
+                                    <li><a href="#">Refrescos</a></li>
+                                    <li><a href="#">Cervezas</a></li>
+                                    <li><a href="#">Vinos</a></li>
+                                    <li><a href="#">Licores</a></li>
+                                    <li><a href="#">Cafés fríos</a></li>
+                                    <li><a href="#">Zumos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Higiene y Perfumería</a>
+                                <ul>
+                                    <li><a href="#">Limpieza Corporal</a></li>
+                                    <li><a href="#">Cuidado Capilar</a></li>
+                                    <li><a href="#">Limpieza de Manos</a></li>
+                                    <li><a href="#">Salud Bucal</a></li>
+                                    <li><a href="#">para Viajar</a></li>
+                                    <li><a href="#">Botiquín Médico</a></li>
+                                    <li><a href="#">Desodorantes</a></li>
+                                    <li><a href="#">Perfumes</a></li>
+                                    <li><a href="#">Accesorios de Baño y de Belleza</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Limpieza del Hogar</a>
+                                <ul>
+                                    <li><a href="#">Suelo</a>
+                                    <li><a href="#">Cristales</a></li>
+                                    <li><a href="#">Madera</a></li>
+                                    <li><a href="#">Baño</a></li>
+                                    <li><a href="#">Terraza y Jardín</a></li>
+                                </ul>
+                            <li><a href="#">Accesorios para la casa</a>
+                                <ul>
+                                    <li><a href="#">Cocina</a></li>
+                                    <li><a href="#">Baño</a></li>
+                                    <li><a href="#">Mesa</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Productos para tu Mascota</a>
+                                <ul>
+                                    <li><a href="#">Anti-Parásitos</a></li>
+                                    <li><a href="#">Perros</a></li>
+                                    <li><a href="#">Gatos</a></li>
+                                    <li><a href="#">Pájaros</a></li>
+                                    <li><a href="#">Otros Animales</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ofertas</a>
+                        <ul>
+                            <li><a href="#">En todas nuestras tiendas</a></li>
+                            <li><a href="#">En tu tienda más cercana</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ayuda</a>
+                        <ul>
+                            <li><a href="#">Reportar un problema</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contáctanos</a>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;952 57 29 76</a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;639 75 30 89</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;supermercasa@<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gruposupca.com</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i>&nbsp;&nbsp;&nbsp;@supermercasa</a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;supermercasa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="carrusel">
+            <ul>
+                <li><img src="a-Imagenes/PasilloSupermercado.jpg" id="pasillo" alt="SupermerCasa"></li>
+                <li><img src="a-Imagenes/PasilloReducido.png" id="pasilloReducido" alt="SupermerCasa"></li>
+            </ul>
+        </section>
+        <section id="bienvenido">
+            <h1>Bienvenidos a SupermerCasa</h1>
+            <p>Tu supermercado de confianza</p>
+        </section>
+
+
+        <section id="seccionesDelSupermercado">
+            <h3>Todo lo que necesites, a tu alcance</h3>
+            <section id="seccionesContenido">
+                <section id="img1subseccionesMain">
+                    <li><img src="a-Imagenes/EntregaDomicilio.jpeg" alt="Entrega a domicilio"></li>
+                    <a href="#"><p class="textoSecciones">Te lo llevamos a casa</p></a>
+                </section>
+                <section id="img2subseccionesMain">
+                    <li><img src="a-Imagenes/CarroLlenoenPasillo.png" alt="Carro de la compra"></li>
+                    <a href="#"><p class="textoSecciones">Encuentra todo lo que busques</p></a>
+                </section>
+                <section id="img3subseccionesMain">
+                    <li><img src="a-Imagenes/Carniceria.jpg" alt="Carnicería"></li>
+                    <a href="#"><p class="textoSecciones">La carne de mayor calidad</p></a>
+                </section>
+                <section id="img4subseccionesMain">
+                    <li><img src="a-Imagenes/Fruteria.jpg" alt="Frutería"></li>
+                    <a href="#"><p class="textoSecciones">La fruta más fresca</p></a>
+                </section>
+            </section>
+        </section>
+
+
+        <section id="seccionProductos">
+            <h3>Nuestros productos más vendidos</h3>
+            <section id="subseccionProductos">
+                <article id="arroz">
+                    <img src="a-Imagenes/Arroz.jpg" alt="Arroz gran selección">
+                    <a href="#"><p class="textoProductos">Arroz gran selección</p></a>
+                </article>
+                <article id="chorizo">
+                    <img src="a-Imagenes/Chorizo.jpg" alt="Chorizo picante">
+                    <a href="#"><p class="textoProductos">Chorizo picante de calidad</p></a>
+                </article>
+                <article id="manzana">
+                    <img src="a-Imagenes/ManzanaGrannySmith.jpg" alt="Manzana granny Smith">
+                    <a href="#"><p class="textoProductos">Manzana granny Smith</p></a>
+                </article>
+                <article id="pan">
+                    <img src="a-Imagenes/PanChapata.jpg" alt="Pan chapata">
+                    <a href="#"><p class="textoProductos">Pan chapata</p></a>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="seccionesFooter">
+            <h4>Todo sobre nosotros</h4>
+            <ul>
+                <li><a href="#">Grupo SupCa</a></li>
+                <li><a href="#">Nuestras tiendas</a></li>
+            </ul>
+        </section>
+        <section class="seccionesFooter">
+            <h4>Trabaja con nosotros</h4>
+            <ul>
+                <li><a href="#">Como trabajador</a></li>
+                <li><a href="#">Como proveedor</a></li>
+                <li><a href="#">Como empresa o autónomo colaborador</a></li>
+            </ul>
+        </section>
+        <section class="seccionesFooter">
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="#">Preguntas</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Envíos</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </section>
+        <section class="seccionesFooter">
+            <h4>Síguenos</h4>
+            <section id="redesSociales">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

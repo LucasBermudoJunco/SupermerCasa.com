@@ -1,0 +1,96 @@
+/*******************************
+FORMULARIO REGISTRO USUARIO*/
+
+/*******************************
+TODOS LOS ELEMENTOS DE LA PÁGINA*/
+*{
+    background: #79caeb;
+}
+
+/*******************************
+BODY*/
+body{
+    background: #79caeb;
+}
+
+/*******************************
+HEADER*/
+header{
+    background: #017bab;
+}
+
+header *{
+    background: inherit;
+    color: #fff;
+}
+
+/*******************************
+CONTENIDO DEL FORMULARIO*/
+.formulario{
+    margin-top: 110px;
+    height: 590px;
+    border-top: 4px solid #1685b0;
+}
+
+/*******************************
+CELDAS DE INTRODUCCIÓN DE DATOS*/
+.controles{
+    border: 1px solid #017bab;
+    background: #58a9c9;
+}
+
+#fechaNacimiento{
+    padding-right: 35px;
+}
+
+input:focus{
+    outline: solid 5px #017bab;
+}
+
+input:focus:valid:not(#Registrarse){
+    background: url("../../a-Imagenes/TickVerde.png") no-repeat 98% center;
+}
+
+input:focus:invalid{
+    background: url("../../a-Imagenes/EquisRoja.png") no-repeat 98% center;
+}
+
+#seccionContrasenya{
+    position: relative;
+}
+
+#noValido{
+    padding: 10px;
+    width: 270px;
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    color: black;
+    border: solid 3px red;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+input:focus:invalid + #noValido{
+    display: block;
+}
+
+/*******************************
+TÉRMINOS Y CONDICIONES*/
+#terminosYCondiciones{
+    margin-top: 10px;
+}
+
+/*******************************
+BOTÓN DE CONFIRMACIÓN*/
+.boton{
+    background: #017bab;
+}
+
+/*******************************
+OPCIÓN PARA CONTRASEÑA OLVIDADA*/
+.formulario a{
+    color: black;
+}

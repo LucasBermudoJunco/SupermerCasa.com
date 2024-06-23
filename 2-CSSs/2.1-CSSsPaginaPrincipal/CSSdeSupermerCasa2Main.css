@@ -1,0 +1,370 @@
+/*******************************
+MAIN*/
+main{
+    position: relative;
+    padding-top: 97px;
+    width: 100%;
+}
+
+/*******************************
+CARRUSEL*/
+#carrusel{
+    /*width: 99%;*/
+    /*max-width: 900px;*/
+    /*max-height: 400px;*/
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*z-index: -1;*/
+}
+
+#carrusel{
+    width: 100%;
+}
+
+#carrusel img{
+    width: 100%;
+}
+
+#pasilloReducido{
+    display: none;
+}
+
+/*******************************
+CONTENIDO PRINCIPAL DEL MAIN*/
+main h1,h3{
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*z-index: -1;*/
+    /*position: relative;*/
+}
+
+main p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+main section > p{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+main article a p{
+    text-decoration: underline;
+}
+
+/*******************************
+SECCIONES DEL SUPERMERCADO*/
+#seccionesDelSupermercado{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: rgb(244, 244, 230);
+}
+
+#seccionesContenido{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    margin: 0 2px;
+}
+
+#seccionesContenido section{
+    margin: 0 5px;
+}
+
+#seccionesContenido img{
+    width: 600px;
+}
+
+main section a {
+    display: block;
+    position: relative;
+    color: #000;
+}
+
+main section img {
+    max-width: 100%;
+}
+
+.textoSecciones {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*******************************
+PRODUCTOS MÁS VENDIDOS*/
+#subseccionProductos{
+    text-align: center;
+    /*margin: 0 2px;*/
+}
+
+#subseccionProductos article{
+    display: inline-block;
+    margin-right: 30p   ;
+}
+
+#subseccionProductos article:last-child{
+    margin-right: 0;
+}
+
+#subseccionProductos img{
+    max-width: 250px;
+    height: auto;
+}
+
+.textoProductos{
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*RESPONSIVE*//*******************************
+MAIN*/
+main{
+    position: relative;
+    padding-top: 97px;
+    width: 100%;
+}
+
+/*******************************
+CARRUSEL*/
+#carrusel{
+    /*width: 99%;*/
+    /*max-width: 900px;*/
+    /*max-height: 400px;*/
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*z-index: -1;*/
+}
+
+#carrusel{
+    width: 100%;
+}
+
+#carrusel img{
+    width: 100%;
+}
+
+/*******************************
+CONTENIDO PRINCIPAL DEL MAIN*/
+main h1,h3{
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*z-index: -1;*/
+    /*position: relative;*/
+}
+
+main p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+main section > p{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+main article a p{
+    text-decoration: underline;
+}
+
+/*CARRUSEL*/
+#pasilloReducido{
+    display: none;
+}
+
+/*******************************
+SECCIONES DEL SUPERMERCADO*/
+#seccionesDelSupermercado{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: rgb(244, 244, 230);
+}
+
+#seccionesContenido{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    margin: 0 2px;
+}
+
+#seccionesContenido section{
+    margin: 0 5px;
+}
+
+#seccionesContenido img{
+    width: 600px;
+}
+
+main section a {
+    display: block;
+    position: relative;
+    color: #000;
+}
+
+main section img {
+    max-width: 100%;
+}
+
+.textoSecciones {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*******************************
+PRODUCTOS MÁS VENDIDOS*/
+#subseccionProductos{
+    text-align: center;
+    /*margin: 0 2px;*/
+}
+
+#subseccionProductos article{
+    display: inline-block;
+    margin-right: 30p   ;
+}
+
+#subseccionProductos article:last-child{
+    margin-right: 0;
+}
+
+#subseccionProductos img{
+    max-width: 250px;
+    height: auto;
+}
+
+.textoProductos{
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 950px){
+    #seccionesDelSupermercado p{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 820px){
+    #seccionesDelSupermercado p{
+        font-size: 11px;
+    }
+}
+
+/*VENTANA REDUCIDA Y TABLET HORIZONTAL(765px)*/
+@media(max-width: 765px){
+    main{
+        padding-top: 85px;
+    }
+    
+    main h1{
+        font-size: 20px;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    main h3{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 657px){
+    #seccionesDelSupermercado p{
+        font-size: 10px;
+    }
+}
+
+/*TABLET VERTICAL(675px)*/
+@media(max-width: 675px){
+    main{
+        padding-top: 80px;
+    }
+}
+
+@media(max-width: 640px){
+    #seccionesContenido{
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: top;
+        text-align: center;
+    }
+    
+    #seccionesDelSupermercado p{
+        font-size: 15px;
+    }
+}
+
+/*TABLET VERTICAL REDUCIDA Y MÓVIL(610px)*/
+@media(max-width: 610px){
+    main{
+        padding-top: 54px;
+    }
+}
+
+@media(max-width: 550px){
+    main article img{
+        width: 120px;
+    }
+}
+
+@media(max-width: 500px){
+    main{
+        padding-top: 49px;
+    }
+
+    #pasillo{
+        display: none;
+    }
+
+    #pasilloReducido{
+        display: block;
+    }
+}
+
+@media(max-width: 460px){
+    main{
+        padding-top: 40px;
+    }
+}
+
+@media(max-width: 320px){
+    #seccionesDelSupermercado p{
+        font-size: 13px;
+    }
+}

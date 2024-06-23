@@ -1,0 +1,56 @@
+/*******************************
+FORMULARIO INICIO SESIÓN*/
+
+/*******************************
+TODOS LOS ELEMENTOS DE LA PÁGINA*/
+*{
+    background: #73e756;
+}
+
+/*******************************
+BODY*/
+body{
+    background: #73e756;
+}
+
+/*******************************
+HEADER*/
+header{
+    background: #198a19;
+}
+
+header *{
+    background: inherit;
+    color: #fff;
+}
+
+/*******************************
+CONTENIDO DEL FORMULARIO*/
+.formulario{
+    margin-top: 130px;
+    height: 340px;
+    border-top: 4px solid #29a10b;
+}
+
+/*******************************
+CELDAS DE INTRODUCCIÓN DE DATOS*/
+.controles{
+    border: 1px solid #29a10b;
+    background: #44cf44;
+}
+
+input:focus{
+    outline: solid 5px #198a19;
+}
+
+/*******************************
+BOTÓN DE CONFIRMACIÓN*/
+.boton{
+    background: #29a10b;
+}
+
+/*******************************
+OPCIÓN PARA CONTRASEÑA OLVIDADA*/
+.formulario a{
+    color: white;
+}

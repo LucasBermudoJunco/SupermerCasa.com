@@ -1,0 +1,420 @@
+/*******************************
+HEADER*/
+header{
+    background-color: #198a19;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+/*******************************
+CONTENIDO DE LAS FILAS DEL HEADER*/
+.headerContenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*******************************
+LOGO*/
+#logo img{
+    width: 250px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+#logoReducido img{
+    display: none;
+}
+
+/*******************************
+SECCIÓN DE BÚSQUEDA*/
+#busqueda{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 15px;
+}
+
+#busqueda input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-right: 10px;
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    min-width: 60px;
+}
+
+#busqueda input[type="search"]::placeholder{
+    color: #fff;
+}
+
+#busqueda button{
+    background-color: transparent;
+    /*font-size: large*/
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*******************************
+LISTAS DEL HEADER*/
+nav ul{
+    /*list-style: none;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    display: flex;
+    position: relative;
+}
+
+nav ul li{
+    white-space: nowrap;
+    position: relative;
+    padding: 5px 20px;
+}
+
+nav > ul > li{
+    margin: 0 10px;
+}
+
+nav ul li:hover{
+    border-radius: 5px;
+}
+
+nav ul li:hover{
+    background-color: #0d660d;
+    border: 2px black;
+}
+
+nav ul li a{
+    /*text-decoration: none;*/
+    color: #fff;
+}
+
+nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    left: 0;
+    margin-top: 5px;
+    background-color: #0d660d;
+    border-radius: 5px;
+    z-index: 60;
+}
+
+nav li:hover > ul{
+    display: block;
+}
+
+nav ul li ul li{
+    margin-right: 0;
+    padding: 10px;
+}
+
+nav ul li ul li:hover{
+    background-color: #198a19;
+}
+
+nav ul li ul li ul{
+    left: 100%;
+    top: -5px;
+}
+
+#nav1{
+    padding-bottom: 20px;
+}
+
+/*
+.headerContenido:last-child{
+    flex: 1;
+    justify-content: center;
+}
+*/
+
+/*
+#navInferior{
+    text-align: left;
+}
+*/
+
+#idiomas{
+    /*position: relative;*/
+    right: 0;
+    left: auto;
+}
+
+/*RESPONSIVE*/
+#checkbtn{
+    float: left;
+    /*line-height: ¿?;*/
+    margin: 0 30px;
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#check{
+    display: none;
+}
+
+/*VENTANA REDUCIDA Y TABLET HORIZONTAL(765px)*/
+@media(max-width: 765px){
+    #logo img{
+        width: 190px;
+    }
+
+    #busqueda input{
+        /*min-width: 100px;*/
+        height: 15px;
+        padding: 10px 5px;
+    }
+
+    #busqueda input::placeholder{
+        font-size: 12px;
+    }
+
+    #navSuperior img{
+        width: 25px;
+    }
+
+    #navInferior{
+        font-size: 14px;
+    }
+}
+
+/*TABLET VERTICAL(675px)*/
+@media(max-width: 675px){
+    #logo img{
+        width: 140px;
+    }
+
+    #navSuperior img{
+        width: 20px;
+    }
+}
+
+/*TABLET VERTICAL REDUCIDA Y MÓVIL(610px)*/
+@media(max-width: 610px){
+    #checkbtn{
+        display: inline-block;        
+    }
+
+    #logo img{
+        width: 190px;
+    }
+
+    #busqueda input{
+        display: none;
+    }
+
+    #navSuperior > ul > li{
+        padding: 5px 10px;
+        margin: 0 3px;
+    }
+
+    #navSuperior > ul > li:first-child{
+        margin-left: 0;
+    }
+
+    #navSuperior > ul > li:last-child{
+        margin-right: 0;
+    }
+
+    #cuenta{
+        right: 0;
+        left: auto;
+    }
+
+    #navInferior{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 54px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: #025302;
+        z-index: 100;
+    }
+
+    #navInferior > ul{
+        position: relative;
+        display: block;
+        top: 50px;
+    }
+
+    #navInferior > ul li{
+        margin: 35px 0;
+        padding: 15px 0;
+        line-height: 20px;
+    }
+
+    #navInferior > ul li a{
+        font-size: 20px;
+    }
+
+    #navInferior li:hover > ul{
+        display: none;
+    }
+
+    #check:checked ~ #headerFila2 #navInferior{
+        left: 0;
+    }
+
+    #check:checked ~ .headerContenido #navSuperior ul li:hover > ul{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    header:first-child{
+        padding: 7px 0;
+    }
+
+    #logo img{
+        width: 150px;
+    }
+
+    #cesta{
+        right: 0;
+        left: auto;
+    }
+
+    #navInferior{
+        top: 49px;
+    }
+}
+
+@media(max-width: 460px){
+    header{
+        height: 40px;
+    }
+
+    #checkbtn{
+        padding-top: 3px;
+        font-size: 20px;
+    }
+
+    #navInferior{
+        top: 40px;
+    }
+}
+
+@media(max-width: 425px){
+    #navSuperior > ul li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width: 417px){
+    #navSuperior > ul li{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media(max-width: 390px){
+    header > *{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #checkbtn{
+        padding-top: 6px;
+        font-size: 15px;        
+    }
+
+    #logo img{
+        width: 120px;
+    }
+
+    #busqueda button{
+        padding-bottom: 2px;
+        font-size: 12px;
+    }
+
+    #navSuperior img{
+        width: 18px;
+    }
+}
+
+@media(max-width: 356px){
+    #checkbtn{
+        padding-top: 6px;
+        font-size: 13px;        
+    }
+
+    #logo img{
+        width: 110px;
+    }
+
+    #busqueda button{
+        padding-bottom: 2px;
+        font-size: 10px;
+    }
+
+    #navSuperior img{
+        width: 16px;
+    }
+}
+
+@media(max-width: 336px){
+    #logo img{
+        display: none;
+    }
+
+    #logoReducido img{
+        display: inline;
+        margin-right: 7px;
+        width: 70px;
+        height: 30px;
+        border-radius: 10px;
+    }
+}
+
+@media(max-width: 285px){
+    #logoReducido img{
+        width: 65px;
+        height: 27px;
+        border-radius: 10px;
+    }
+}
+
+/*RESPONSIVE PARA EL ALTO*/
+
+@media(max-height: 530px) and (max-width: 610px){
+    #navInferior > ul li{
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 15px 0;
+        line-height: 15px;
+    }
+}
+
+@media(max-height: 420px){
+    #navInferior > ul li{
+        margin-bottom: 20px;
+        line-height: 10px;
+    }
+}
+
+@media(max-height: 350px){
+    #navInferior > ul li{
+        margin-bottom: 10px;
+        line-height: 10px;
+    }
+}
+
+@media(max-height: 310px){
+    #navInferior > ul li{
+        margin-bottom: 2px;
+        line-height: 14px;
+    }
+}
